@@ -21,22 +21,7 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Repositório das aulas do curso, Ignite (Rocketseat) - React Native.
-
----
-
-### 🔍 Lista das Aulas
-
-<details>
-<summary><span style="color:#58A6FF">Firebase:</span></summary>
-<br>
-
-[1-CriacaoDoProjetoEDicaNinja](https://github.com/glaulher/react-native_Ignite/tree/main/ChapterIII/rentx_aula/1-CriacaoDoProjetoEDicaNinja)
-
-
-</details>
-
-
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Stagin App, Ignite (Rocketseat) - React Native.
 
 ---
 
