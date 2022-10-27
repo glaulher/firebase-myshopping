@@ -1,9 +1,10 @@
+# react-native_Ignite
 <p align="center" >
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
-<h1 align="center">
-  🚀Criando o Projeto🚀
+<h1 align="center"> 
+  🚀Fundamentos do Firebase no React Native🚀
 </h1>
 
 <p align="center" >
@@ -20,47 +21,22 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Criando o Projeto, Fundamentos do Firebase, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Repositório das aulas do curso, Ignite (Rocketseat) - React Native.
 
 ---
 
-## 📂 Como rodar este projeto
+### 🔍 Lista das Aulas
 
-Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/) e [Android Studio](https://developer.android.com/studio) Instalado em seu computador.
+<details>
+<summary><span style="color:#58A6FF">Firebase:</span></summary>
+<br>
 
-### 🌀 Clonando o repositório
+[Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)
 
-```bash
-# Clone este repositório
-$ git clone https://github.com/glaulher/firebase-myshopping.git
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd firebase-myshopping
+</details>
 
-```
 
-### 🎲 Rodando a Aplicação
-
-```bash
-# Instale as dependências
-$ yarn install ou npm install
-
-# Execute o projeto
-$ npx expo start
-```
-
-✔️ Notas:
-
-Para criar um projeto com expo, utilizar o comando abaixo escolhendo o template bare minimal:
-
-```shell
-$ npx create-expo-app --template
-
-// para criar as chaves
-
-keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android  -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
-
-```
 
 ---
 
@@ -68,7 +44,7 @@ keytool -genkey -v -keystore ~/.android/debug.keystore -storepass android -alias
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [Expo](https://expo.dev/)
+- [expo](https://docs.expo.dev/)
 - [React Native](https://reactnative.dev)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org)
@@ -78,7 +54,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🧑 Autor
 
-<img style="border-radius: 75px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
+<img style="border-radius: 80px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
  <h4>Glaulher Medeiros</h4>
 
 <p align="left">
