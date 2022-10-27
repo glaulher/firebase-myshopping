@@ -2,7 +2,7 @@
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
-<h1 align="center"> 
+<h1 align="center">
   🚀Criando o Projeto🚀
 </h1>
 
@@ -32,10 +32,10 @@ Para clonar e executar este aplicativo, você precisará de [Git](https://git-sc
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/glaulher/react-native_Ignite.git
+$ git clone https://github.com/glaulher/firebase-myshopping.git
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd react-native_Ignite/ChapterVI/gofinances_aulas/BuildComExpo/gofinances
+$ cd firebase-myshopping
 
 ```
 
@@ -46,7 +46,7 @@ $ cd react-native_Ignite/ChapterVI/gofinances_aulas/BuildComExpo/gofinances
 $ yarn install ou npm install
 
 # Execute o projeto
-$ yarn expo start
+$ npx expo start
 ```
 
 ✔️ Notas:
