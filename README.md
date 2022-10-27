@@ -28,7 +28,7 @@
 ### 🔍 Lista das Aulas
 
 <details>
-<summary><span style="color:#58A6FF">Aulas:</span></summary>
+<summary><span style="color:#58A6FF">Firebase:</span></summary>
 <br>
 
 [1-CriacaoDoProjetoEDicaNinja](https://github.com/glaulher/react-native_Ignite/tree/main/ChapterIII/rentx_aula/1-CriacaoDoProjetoEDicaNinja)
