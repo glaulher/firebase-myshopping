@@ -30,12 +30,10 @@
 <details>
 <summary><span style="color:#58A6FF">Firebase:</span></summary>
 <br>
-<ul>
-<li> [01-Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)</li>
 
-<li> [02-Cloud Firestore](https://github.com/glaulher/firebase-myshopping/tree/CloudFirestore)</li>
+[01-Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)
 
-</ul>
+[02-Cloud Firestore](https://github.com/glaulher/firebase-myshopping/tree/CloudFirestore)
 
 </details>
 
