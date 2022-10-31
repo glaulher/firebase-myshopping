@@ -3,7 +3,7 @@
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
-<h1 align="center"> 
+<h1 align="center">
   🚀Fundamentos do Firebase no React Native🚀
 </h1>
 
@@ -30,13 +30,14 @@
 <details>
 <summary><span style="color:#58A6FF">Firebase:</span></summary>
 <br>
+<ul>
+<li> [01-Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)</li>
 
-[Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)
-[Cloud Firestore](https://github.com/glaulher/firebase-myshopping/tree/CloudFirestore)
+<li> [02-Cloud Firestore](https://github.com/glaulher/firebase-myshopping/tree/CloudFirestore)</li>
+
+</ul>
 
 </details>
-
-
 
 ---
 
