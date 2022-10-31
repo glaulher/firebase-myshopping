@@ -62,6 +62,7 @@ $ yarn add @react-native-firebase/firestore
 ```
 Algumas opções para utilizar com o firebase na utilização da query:
 
+```shell
 .where('quantity','==',1) // busca os itens onde as quantidades são iguais a 1
 .limit(3) // limita a quantidade de retorno
 .orderBy('quantity', 'asc') // por ordem asc ou desc
@@ -70,6 +71,8 @@ Algumas opções para utilizar com o firebase na utilização da query:
 .startAfter(3) // se usado a lista inicia a partir do 4
 .endBefore(5) // se usado, lista abaixo de 5
 .get()  // Para buscar apenas uma vez
+
+```
 
 ---
 Para listar:
