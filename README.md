@@ -1,10 +1,9 @@
-# react-native_Ignite
 <p align="center" >
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
-<h1 align="center"> 
-  🚀Fundamentos do Firebase no React Native🚀
+<h1 align="center">
+  🚀Cloud Firestore🚀
 </h1>
 
 <p align="center" >
@@ -21,30 +20,100 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Repositório das aulas do curso, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Cloud Firestore, Fundamentos do Firebase, Ignite (Rocketseat) - React Native.
 
 ---
 
-### 🔍 Lista das Aulas
+## 📂 Como rodar este projeto
 
-<details>
-<summary><span style="color:#58A6FF">Firebase:</span></summary>
-<br>
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/) e [Android Studio](https://developer.android.com/studio) Instalado em seu computador.
 
-[Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)
+### 🌀 Clonando o repositório
 
+```bash
+# Clone este repositório
+$ git clone https://github.com/glaulher/firebase-myshopping.git
 
-</details>
+# Acesse a pasta do projeto no terminal/cmd
+$ cd firebase-myshopping
 
+```
 
+### 🎲 Rodando a Aplicação
+
+```bash
+# Instale as dependências
+$ yarn install ou npm install
+
+# Execute o projeto
+$ npx expo start
+```
+
+✔️ Notas:
+
+Instalação das bibliotecas para utilizar o firebase:
+
+```shell
+
+$ npx expo install @react-native-firebase/app
+
+$ yarn add @react-native-firebase/firestore
+
+```
+Algumas opções para utilizar com o firebase na utilização da query:
+
+.where('quantity','==',1) // busca os itens onde as quantidades são iguais a 1
+.limit(3) // limita a quantidade de retorno
+.orderBy('quantity', 'asc') // por ordem asc ou desc
+.startAt (2) // não lista quiantidade menor que 2
+.endAt(3) // não lista com quantidade maior que 3
+.startAfter(3) // se usado a lista inicia a partir do 4
+.endBefore(5) // se usado, lista abaixo de 5
+.get()  // Para buscar apenas uma vez
 
 ---
+Para listar:
+
+```shell
+ const subscribe = firestore()
+      .collection('products')
+      .orderBy('description', 'asc')
+      // Para ficar observando as alterações:
+      .onSnapshot(querySnapshot => {
+        const data = querySnapshot.docs.map(doc => {
+          return {
+            id: doc.id,
+            ...doc.data(),
+          };
+        }) as ProductProps[];
+        setProducts(data);
+      });
+    // Limpa ao desmontar o componente
+    return () => subscribe();
+```
+Para deletar:
+```shell
+  firestore()
+  .collection('products')
+  .doc(data.id)
+  .delete();
+```
+
+Para atualizar(neste exemplo, está sendo mudado o estado de done na tabela):
+```shell
+  firestore()
+  .collection('products')
+  .doc(data.id)
+  .update({
+      done: !data.done,
+    });
+```
 
 ## 🚀 Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [expo](https://docs.expo.dev/)
+- [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org)
@@ -54,7 +123,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🧑 Autor
 
-<img style="border-radius: 80px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
+<img style="border-radius: 75px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
  <h4>Glaulher Medeiros</h4>
 
 <p align="left">
