@@ -1,10 +1,9 @@
-# react-native_Ignite
 <p align="center" >
   <img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="100" />
 </p>
 
 <h1 align="center">
-  🚀Fundamentos do Firebase no React Native🚀
+  🚀Storage🚀
 </h1>
 
 <p align="center" >
@@ -21,29 +20,128 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Repositório das aulas do curso, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Storage, Fundamentos do Firebase, Ignite (Rocketseat) - React Native.
 
 ---
 
-### 🔍 Lista das Aulas
+## 📂 Como rodar este projeto
 
-<details>
-<summary><span style="color:#58A6FF">Firebase:</span></summary>
-<br>
+Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs](https://nodejs.org/en/) e [Android Studio](https://developer.android.com/studio) Instalado em seu computador.
 
-[01-Criando o Projeto](https://github.com/glaulher/firebase-myshopping/tree/CriandoProjeto)
+### 🌀 Clonando o repositório
 
-[02-Cloud Firestore](https://github.com/glaulher/firebase-myshopping/tree/CloudFirestore)
+```bash
+# Clone este repositório
+$ git clone https://github.com/glaulher/firebase-myshopping.git
 
-</details>
+# Acesse a pasta do projeto no terminal/cmd
+$ cd firebase-myshopping
+
+```
+
+### 🎲 Rodando a Aplicação
+
+```bash
+# Instale as dependências
+$ yarn install ou npm install
+
+# Execute o projeto
+$ npx expo start
+```
+
+✔️ Notas:
+
+https://rnfirebase.io/storage/usage
+
+
+
+Instalação das bibliotecas para utilizar o firebase storage:
+
+```shell
+
+# Install the storage module
+
+$ yarn add @react-native-firebase/storage
+
+```
 
 ---
+Para enviar:
+
+```shell
+
+ if (!image) {
+      return Alert.alert('Escolha uma foto');
+    }
+
+    const fileName = new Date().getTime();
+    const MIME = image.match(/\.(?:.(?!\.))+$/);
+    const reference = storage().ref(`/images/${fileName}${MIME}`);
+    const uploadTask = reference.putFile(image);
+
+    uploadTask.on('state_changed', taskSnapshot => {
+      const percent = (
+        (taskSnapshot.bytesTransferred / taskSnapshot.totalBytes) *
+        100
+      ).toFixed(0);
+      setProgress(Number(percent));
+
+      setBytesTransferred(
+        `${taskSnapshot.bytesTransferred} transferido de ${taskSnapshot.totalBytes}`,
+      );
+
+      uploadTask
+        .then(async () => {
+          const imageUrl = await reference.getDownloadURL();
+
+          if (taskSnapshot.state === 'success') {
+            console.log(imageUrl);
+            setImage('');
+            return Alert.alert('Upload concluído com sucesso!');
+          }
+          return undefined;
+        })
+        .catch(error => console.error(error));
+    });
+    return undefined;
+
+```
+Para listar:
+```shell
+  storage()
+      .ref('images')
+      .list()
+      .then(result => {
+        const files: FileProps[] = [];
+
+        result.items.forEach(file => {
+          files.push({
+            name: file.name,
+            path: file.fullPath,
+          });
+        });
+        setPhotos(files);
+      });
+```
+
+Para deletar:
+```shell
+   storage()
+      .ref(path)
+      .delete()
+      .then(() => {
+        Alert.alert('Imagem excluída com sucesso!');
+        fetchImages();
+      })
+      // eslint-disable-next-line no-console
+      .catch(error => console.error(error));
+```
 
 ## 🚀 Tecnologias Utilizadas
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- [expo](https://docs.expo.dev/)
+- [Expo](https://expo.dev/)
 - [React Native](https://reactnative.dev)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [TypeScript](https://www.typescriptlang.org)
@@ -53,7 +151,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🧑 Autor
 
-<img style="border-radius: 80px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
+<img style="border-radius: 75px;" src="https://glaulher.github.io/assets/img/sample/avatar.jpeg" width="150px;" alt=""/>
  <h4>Glaulher Medeiros</h4>
 
 <p align="left">
