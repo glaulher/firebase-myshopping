@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  🚀Cloud Firestore🚀
+  🚀Autenticação🚀
 </h1>
 
 <p align="center" >
@@ -20,7 +20,7 @@
 
 ## 📋 Sobre
 
-<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Cloud Firestore, Fundamentos do Firebase, Ignite (Rocketseat) - React Native.
+<img align="center" src="https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg" width="22" /> Autenticação, Fundamentos do Firebase, Ignite (Rocketseat) - React Native.
 
 ---
 
@@ -69,14 +69,11 @@ Autenticação anônima - o usuário realiza a autenticação sem criar uma cont
   } 
 ```
 
-
-
 ---
 
 Para criar com e-mail e senha:
 
 ```shell
-
   async function handleCreateUserAccount() {
     auth()
       .createUserWithEmailAndPassword(email, password)
@@ -103,7 +100,6 @@ Para criar com e-mail e senha:
         }
       });
   }
-
 ```
 
 Para logar com e-mail e senha:
@@ -138,7 +134,6 @@ Para logar com e-mail e senha:
         }
       });
   }
-  
 ```
 
 Para realizar logout:
@@ -161,10 +156,7 @@ Para realizar  a troca da senha:
         ),
       );
   }
-
 ```
-
-
 
 ## 🚀 Tecnologias Utilizadas
 
