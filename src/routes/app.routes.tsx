@@ -24,8 +24,8 @@ export function AppRoutes() {
           paddingVertical: Platform.OS === 'ios' ? 20 : 0,
         },
         tabBarLabelStyle: {
-          fontFamily: theme.FONTS.REGULAR
-        }
+          fontFamily: theme.FONTS.REGULAR,
+        },
       }}
     >
       <Screen
@@ -33,12 +33,8 @@ export function AppRoutes() {
         component={Products}
         options={{
           tabBarIcon: ({ size, color }) => (
-            <MaterialIcons
-              name="shopping-cart"
-              size={size}
-              color={color}
-            />
-          )
+            <MaterialIcons name="shopping-cart" size={size} color={color} />
+          ),
         }}
       />
       <Screen
@@ -46,12 +42,8 @@ export function AppRoutes() {
         component={Receipts}
         options={{
           tabBarIcon: ({ size, color }) => (
-            <MaterialIcons
-              name="receipt"
-              size={size}
-              color={color}
-            />
-          )
+            <MaterialIcons name="receipt" size={size} color={color} />
+          ),
         }}
       />
       <Screen
@@ -59,14 +51,10 @@ export function AppRoutes() {
         component={Upload}
         options={{
           tabBarIcon: ({ size, color }) => (
-            <MaterialIcons
-              name="backup"
-              size={size}
-              color={color}
-            />
-          )
+            <MaterialIcons name="backup" size={size} color={color} />
+          ),
         }}
       />
     </Navigator>
-  )
+  );
 }
